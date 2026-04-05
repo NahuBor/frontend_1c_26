@@ -306,5 +306,38 @@
         </tbody>
     </table>
 
+    <h2>Formulario de Registro con validación (Ejercicio 16) </h2>
+
+    <form>
+        <p>
+            <label for="user">Nombre de usuario:</label><br>
+            <input type="text" id="user" name="user" 
+                   placeholder="Mínimo 5 letras" 
+                   minlength="5" maxlength="15" required>
+        </p>
+
+        <p>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" 
+                   placeholder="ejemplo@correo.com" required>
+        </p>
+
+        <p>
+            <label for="pass">Contraseña:</label><br>
+            <input type="password" id="pass" name="pass" 
+                   placeholder="Mínimo 8 caracteres" 
+                   minlength="8" required>
+        </p>
+
+        <p>
+            <label for="fecha">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha" name="fecha" 
+                   min="1920-01-01" max="2010-12-31" required>
+        </p>
+
+        <input type="submit" value="Registrarse">
+        <input type="reset" value="Limpiar">
+    </form>
+
 </body>
 </html>
